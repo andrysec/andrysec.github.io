@@ -1006,15 +1006,16 @@ Kini Pwn0Sec berkembang menjadi komunitas aktif yang membahas segala hal-hal yan
 <div>
 <br /></div>
 <h2 id="all-elements-test">
-Case Study</h2>
+Visi & Misi</h2>
 <div>
 1. XSS Protection이 DOM Paser didasarkan</div>
-<strong>Basic Request</strong><br />
-<pre><code>POST /write?id=1 HTTP/1.1
-title=123&amp;content=&lt;script&gt;alert(45)&lt;/script&gt;&lt;img%20src="&lt;script&gt;alert(45)&lt;/script&gt;"&gt;
+<strong>Visi</strong><br />
+<pre><code>Pwn0Sec bermaksud mendorong, meningkatkan, 
+serta mengedukasi masyarakat luas mengenai teknologi informasi.
 </code></pre>
-<strong>Basic Response</strong><br />
-<pre><code>&amp;lt;script&amp;gt;alert(45)&amp;lt;/script&amp;gt;&lt;img src="&lt;script&gt;alert(45)&lt;/script&gt;"&gt;
+<strong>Misi</strong><br />
+<pre><code>Pwn0Sec bertujuan membagikan pengetahuan 
+serta pengalaman tentang teknologi informasi.
 </code></pre>
 <strong>Attack Request</strong><br />
 <pre><code>POST /write?id=1 HTTP/1.1
