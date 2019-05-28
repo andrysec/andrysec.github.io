@@ -996,10 +996,6 @@ $('.YOUTUBE-iframe-video').css({
 <pre><code class="javascript">Pwn0Sec adalah komunitas untuk menyediakan wadah bagi seluruh BugHunter/Researchers di Indonesia untuk berdiskusi dan berperan aktif untuk membantu masyarakat, pihak swasta ataupun pemerintah. Kami juga memiliki program dan projek untuk membuat komunitas ini menjadi bermanfaat bagi orang banyak
 </code></pre>
 <br />
-Yah, ini sedikit rumit, tapi itu masih cara besar untuk memotong pendekatan XSS yang ada,<br />
-<br />
-Mari kita lihat beberapa kode serangan dalam kasus ini dan bagaimana cara kerjanya.<br />
-<br />
 <h2 id="원리">
 Prinsip</h2>
 Pertama-tama, sepertinya kode serangan berisi atribut title dari tag p. Namun, <code>&lt;xmp&gt;</code> Tag adalah tag yang mengenali string internal sebagai teks biasa, &#8220;&#8221;Daripada memperlakukannya sebagai string, <code>&lt;xmp&gt;</code> Pemrosesan tag lebih diutamakan.<br />
